@@ -1,0 +1,13 @@
+1. which library to use --> yfianance, yahoofinancials
+    - observe data from both
+2. what stocks to download
+    - filter
+3. what can be done
+    a> choose best for intra day trading
+4. fetch opening, closing price
+    - no. of times opening price < closing price
+    - how much opening price < closing price over a period of time
+5. Use Bernoulli formula to predict
+6. Create api for stocks (increasing/decreasing, last X days) --> probability
+    - use stock history to find probability
+7.
