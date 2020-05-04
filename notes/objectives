@@ -7,6 +7,10 @@
 4. fetch opening, closing price
     - no. of times opening price < closing price
     - how much opening price < closing price over a period of time
+    - def func(topXStocks[int], start_date, end_date):
+        - fetch all stocks bw start_date, end_date
+        - calculate high is greater than low
+        return dict(stock_name, probability)
 5. Use Bernoulli formula to predict
 6. Create api for stocks (increasing/decreasing, last X days) --> probability
     - use stock history to find probability
