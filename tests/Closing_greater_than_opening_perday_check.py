@@ -44,15 +44,13 @@ def top_stocks(list_of_stocks, start_date=None, end_date=None):
         df = df.set_index(['Date'])
         df.index = pd.to_datetime(df.index)
         df_new = crop_df(df, start_date, end_date)
-        # df_new = df[df.index > start_date]
-        # df_new = df[df.index <>> start_date]
         df_new["cgo"] = df_new["Close"] > df_new["Open"]
         probability_cgo = df_new["cgo"].sum() / len(df_new["cgo"])
         top_stocks[stock] = probability_cgo
 
     return ({k: v for k, v in sorted(top_stocks.items(), key=lambda item: item[1], reverse=True)})
 
-stocks = top_stocks(stocks_list, '01-01-2018', '01-01-2020')
+stocks = top_stocks(INEOSSTYRO, '12-03-2019', '05-01-2020')
 print(stocks)
 
 '''
